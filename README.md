@@ -26,18 +26,18 @@ $ npm install --save combine-reducers
 var combineReducers = require('combine-reducers');
 
 var reducer = combineReducers({
-	foo: function (store, action) {
-		return action.type === 'incr-foo' ? store + 1 : store;
-	},
-	bar: function (store, action) {
-		return action.type === 'incr-bar' ? store + 1 : store;
-	}
+    foo: function (store, action) {
+        return action.type === 'incr-foo' ? store + 1 : store;
+    },
+    bar: function (store, action) {
+        return action.type === 'incr-bar' ? store + 1 : store;
+    }
 });
 
 reducer({
-	foo: 1,
-	bar: 2
+    foo: 1,
+    bar: 2
 }, {
-	type: 'incr-foo'
+    type: 'incr-foo'
 }); // {foo: 2, bar: 1}
 ```
