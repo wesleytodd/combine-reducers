@@ -1,0 +1,32 @@
+{
+  "name": "combine-reducers",
+  "version": "1.0.0",
+  "description": "A stand-alone, Redux compatible implementation of combine reducers",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel src --out-dir lib",
+    "test": "npm run babel && happiness && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleytodd/combine-reducers.git"
+  },
+  "keywords": [
+    "Redux",
+    "flux",
+    "combineReducers"
+  ],
+  "author": "Wes Todd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleytodd/combine-reducers/issues"
+  },
+  "homepage": "https://github.com/wesleytodd/combine-reducers#readme",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "happiness": "^5.5.0",
+    "mocha": "^2.4.5",
+    "mochify": "^2.16.0"
+  }
+}
