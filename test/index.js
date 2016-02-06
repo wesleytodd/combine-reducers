@@ -11,7 +11,7 @@ describe('combineReducers', function () {
 			},
 			stack: function (state, action) {
 				state = state || [];
-				return action.type === 'push' ? [...state, action.value] : state;
+				return action.type === 'push' ? (state.push(action.value) && state) : state;
 			}
 		});
 
