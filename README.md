@@ -36,7 +36,7 @@ var reducer = combineReducers({
 
 reducer({
     foo: 1,
-    bar: 2
+    bar: 1
 }, {
     type: 'incr-foo'
 }); // {foo: 2, bar: 1}
